@@ -56,7 +56,7 @@ SELECT last_name, job_id, salary FROM employees WHERE job_id = 'SA_REP' OR job_i
 
 -- Utilizando parênteses para sobrepor as regras de precedência
 
-SELECT last_name, job_id, salary FROM employees WHERE (job_id = 'SA_REP' OR job_od 'IT_PROG') AND salary > 10000;
+SELECT last_name, job_id, salary FROM employees WHERE (job_id = 'SA_REP' OR job_od ='IT_PROG') AND salary > 10000;
 
 -- Utilizando a cláusula ORDER BY - Ordem Ascendete
 
@@ -78,7 +78,7 @@ SELECT last_name, job_id, department_id, hire date FROM employees ORDER BY 4;
 
 -- Utilizando a cláusula ORDER BY - Múltiplas colunas ou expressões
 
-SELECT last_name, department_id, salary FROM employees ORDER BY department_id FROM employees ORDER BY department_id, salary DESC;
+SELECT last_name, department_id, salary FROM employees ORDER BY  salary DESC;
 
 -- Utilizando Variáveis de Substituição - &
 
